@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="contact-head" id="contactText">
+            <p class="contact">CONTACT</p>
+            <h1 class="main-head">Let's connect</h1>
+            <p class="head-desc">Please fill out the form below and we'll reach our right away.</p>
+        </div>
+        <form class="input-form" id="contactform">
+            <div class="input-wrapper">
+                <div class="input-details">
+                    <label class="label" for="firstname">First name<span class="required">*</span></label>
+                    <input type="text" id="firstname" class="input-box" />
+                    <p class="error" id="firsterror">Please complete this required field.</p>
+                </div>
+                <div class="input-details">
+                    <label class="label" for="lastname">Last name<span class="required">*</span></label>
+                    <input type="text" id="lastname" class="input-box" />
+                    <p class="error" id="lasterror">Please complete this required field.</p>
+                </div>
+                <div class="input-details">
+                    <label class="label" for="email">Email<span class="required">*</span></label>
+                    <input type="text" id="email" class="input-box" />
+                    <p class="error" id="emailterror">Please complete this required field.</p>
+                </div>
+                <div class="input-details">
+                    <label class="label" for="company">Company name<span class="required">*</span></label>
+                    <input type="text" id="company" class="input-box" />
+                    <p class="error" id="companyerror">Please complete this required field.</p>
+                </div>
+                <div class="input-details">
+                    <label class="label" for="job">Job title<span class="required">*</span></label>
+                    <input type="text" id="job" class="input-box" />
+                    <p class="error" id="joberror">Please complete this required field.</p>
+                </div>
+                <div class="input-details">
+                    <label class="label" for="liketo">I'd like to<span class="required">*</span></label>
+                    <select class="input-box select-box" id="liketo">
+                        <option class="option-ele">Please Select</option>
+                        <option class="option-ele">Finance my tech stack</option>
+                        <option class="option-ele">Offer contract financing to my customers </option>
+                        <option class="option-ele">Something else</option>
+                    </select>
+                    <p class="error" id="likeerror">Please complete this required field.</p>
+                </div>
+            </div>
+            <div class="input-details input-width">
+                <label class="label" for="aboutus">How did you hear about us?<span class="required">*</span></label>
+                <input type="text" id="aboutus" class="input-box" />
+                <p class="error" id="abouterror">Please complete this required field.</p>
+            </div>
+            <div class="input-details input-width">
+                <label class="label" for="else">Anything else you'd like us to know?</label>
+                <input type="text" id="else" class="input-box" />
+            </div>
+            <p class="error" id="allError">Please complete all required fields.</p>
+            <div class="button-con">
+                <button type="submit" class="submit-button" id="submitbutton">Submit</button>
+            </div>
+        </form>
+        <div class="success-con">
+            <h1 class="submitted" id="success">Thanks for reaching out! <br />
+            We will be in touch shortly. </h1>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
